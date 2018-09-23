@@ -41,9 +41,8 @@ namespace ParkingLot
         public void clearSpots() { }
 
         /* Checks if the spot is big enough for the
-            vehicle (and is available).
-            This * compares the SIZE only.It does not
-            check if it has enough spots. */
+            vehicle */
+
         public abstract bool canFitinSpot(ParkingSpot spot);
 
     }

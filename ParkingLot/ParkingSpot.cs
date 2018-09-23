@@ -30,9 +30,13 @@ namespace ParkingLot
 
 
         /* Park vehicle in this spot. */
-        public bool park(Vechicle v) {
+            public bool park(Vechicle v) {
+            // This is check if the Vechicle can fit in the Spot
+           if (v.canFitinSpot(this).Equals(true))
+                Console.WriteLine("You can go ahead and park in your Vechicle");
+                return true;
 
-        }
+            }
 
             public int getRow()
             {
